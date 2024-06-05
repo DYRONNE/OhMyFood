@@ -1,0 +1,84 @@
+@mixin title-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+@mixin card_menu-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+body{
+    margin: 0px;
+    font-family: roboto;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .header__logo {
+            padding: 50px;
+}
+        .header__localisation {
+            background-color: #eaeaea;
+            padding: 10px 0px 10px 0px;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            color: #353535;
+            font-weight: 400;
+            }
+        .header__banner {
+            background-color: #f6f6f6 ;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 50px;
+            text-align: center;
+            &--title {
+                padding: 0% 15% 0% 15%;
+                font-size: 55px;
+            }
+            &--paragraph {
+                color: #353535;
+                font-weight: 300;
+                padding: 0% 10% 0% 10%;
+                font-size: 25px;
+                padding-bottom: 30px;
+            }
+            &--button {
+                padding: 10px;
+            }
+            &--button--link {
+                text-decoration: none;
+                background:linear-gradient(-161deg, #9356DC, #FF79DA);
+                padding: 40px 40px;
+                border-radius: 60px;
+                color: white;
+               
+            }
+        }
+}
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .filters__title {
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .filters__contener {
+        display: flex;
+        flex-direction: column;
+    }
+    &__contener--link {
+        text-decoration: none;
+        color: black;
+        padding: 40px 40px;
+        border-radius: 50px;
+        background-color: #f6f6f6;
+        font-size: 36px;
+        margin-bottom: 30px;
+        width: 100%;
+       
+    }
+}
