@@ -10,6 +10,7 @@
 body{
     margin: 0px;
     font-family: roboto;
+    background-color: #ffffff;
 }
 a {
     text-decoration: none;
@@ -38,6 +39,7 @@ header{
             width: 100%;
             padding-bottom: 100px;
             padding-top: 50px;
+            padding-bottom: 150px;
             text-align: center;
             &--title {
                 padding: 0% 15% 0% 15%;
@@ -46,16 +48,16 @@ header{
             &--paragraph {
                 color: #353535;
                 font-weight: 300;
-                padding: 0% 10% 0% 10%;
+                padding: 0% 8% 0% 8%;
                 font-size: 25px;
-                padding-bottom: 30px;
+                padding-bottom: 70px;
             }
             &--button {
                 padding: 10px;
             }
                 &--button--link {
                     text-decoration: none;
-                    background:linear-gradient(-161deg, #9356DC, #FF79DA);
+                    background:linear-gradient(50deg, #9356DC, #FF79DA);
                     padding: 40px 40px;
                     border-radius: 60px;
                     color: white;
@@ -67,16 +69,31 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
     .filters__title {
         font-size: 40px;
         display: flex;
         align-self: flex-start;
-        padding-left: 10%;
+        padding-left: 5%;
+        padding-top: 90px;
     }
     .filters__contener {
         display: flex;
         flex-direction: column;
     }
+        &__contener--button {
+            display: flex;
+            align-self: flex-start;
+            position: relative;
+            top: 120px;
+            right: 30px;
+            border-radius: 50%;
+            padding: 15px 26px;
+            color: white;
+            background-color: #9356DC;
+            border: #9356DC;
+            font-size: 35px;
+        }
         &__contener--link {
             display: flex;
             justify-content: center;
@@ -86,11 +103,12 @@ header{
             border-radius: 50px;
             background-color: #f6f6f6;
             font-size: 36px;
-            margin-bottom: 30px;
             width: 750px;
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
         }
             &__contener--link i {
-                padding-right: 40px;
+                padding-right: 30px;
+                color: #7E7E7E;
             }
 }
 .restaurants {
@@ -103,10 +121,11 @@ header{
             align-self: flex-start;
             padding-left: 8%;
             font-size: 50px;
+            margin-top: 50px;
         }
         .restaurants__cards {
             display: flex;
-            margin-top: 33px;
+            flex-direction: column;
         }
         &__cards--card { 
             width:900px;
@@ -115,56 +134,77 @@ header{
             filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
             display: flex;
             flex-direction: column;
+            margin-bottom: 50px;
                 &-img {
                     width: 100%;
+                    height: 450px;
                     border-top-left-radius:40px;
                     border-top-right-radius: 40px; 
                     object-fit: cover;   
                 }
                 &-content {
                     width: 100%;
-                    padding-left: 30px;
+                    padding-left: 70px;
+                    height: 170px;
+                    position: relative;
                     &-title {
                         color: black;
-                        font-size: 35px;
+                        font-size: 40px;
+                        margin-bottom: -20px;
+                        margin-top: 30px;
+                        
                     }
                     &-subtitle {
                         color: black;
-                        font-size: 25px;
+                        font-size: 35px;
                     }
                     
                 }
             &-like {
-                position: relative;
-                top: 60px;
+                display: flex;
+                align-self: flex-end;
+                position: absolute;
+                bottom: 45px;
+                right: 60px;
+               
             }    
+            &-like i {
+                font-size: 50px;
+                color: black;
+                transition-property: all;
+                transition: background-color 1000ms ease-in-out;
+                &:hover {
+                    font-weight: 900;
+                    color: transparent;
+                    background:linear-gradient(50deg, #9356DC, #FF79DA);
+                    background-clip: text;
+                    
+                }
+            }
         }
         
 }
-// .heberg-cards .card {
-//     display: flex;
-//     margin-top: 33px;
-//     flex-direction: column;
-//     width: 230px;
-// }
-// .heberg-cards img {
-//     width: 100%;
-//     height: 120px;
-//     border-top-left-radius: 20px;
-//     border-top-right-radius: 20px;
-// }
-
-// .heberg-cards .card-content{
-//     width: 100%;
-//     padding-left: 15px;
-//     display: flex;
-//     flex-direction: column;
-//     margin-top: 7px;
-    
-// }
-
-// .heberg-cards .card-title {
-//     margin-top: 1px;
-//     margin-bottom: 4px;
-    
-// }
+footer {
+    background-color: #353535;
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .footer__logo {
+        color: white;
+        width: 200px;
+        padding-bottom: 10px;
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__links a {
+        color: white;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .footer__links i {
+        padding-right: 10px;
+    }
+}

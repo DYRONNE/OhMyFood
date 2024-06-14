@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  font-family: roboto;
+  background-color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.navbar .navbar__logo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.navbar .navbar__return i {
+  font-size: 60px;
+  color: black;
+  position: relative;
+  right: 220px;
+}
+
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  position: relative;
+  bottom: 110px;
+  padding-top: 50px;
+}
+.menu__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__head i {
+  padding-right: 70px;
+}
+.menu__head--title {
+  font-family: "Shrikhand", serif;
+  font-size: 60px;
+  padding-left: 40px;
+}
+
+.menu__choice {
+  padding: 40px 40px 0px 40px;
+}
+.menu__choice--title {
+  font-weight: 200;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+.menu__choice--title-highlight {
+  position: relative;
+  display: inline-block;
+}
+.menu__choice--title-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -12px; /* Ajustez cette valeur pour la position verticale */
+  left: 0;
+  width: 50%;
+  height: 6px; /* Ajustez cette valeur pour l'épaisseur de la ligne */
+  background-color: #8de4db; /* Ajustez cette valeur pour la couleur de la ligne */
+}
+.menu__choice--card {
+  background-color: #ffffff;
+  border-radius: 40px;
+  position: relative;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.menu__choice--card-title {
+  font-size: 30px;
+  font-weight: 450;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+.menu__choice--card-subtitle {
+  padding-left: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: -20px;
+  padding-bottom: 40px;
+}
+.menu__choice--card-price {
+  position: absolute;
+  right: 40px;
+  bottom: 5px;
+  font-size: 38px;
+  font-weight: 450;
+}
+
+.menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.menu__button button {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 70px;
+  color: white;
+  background: linear-gradient(10deg, #9356DC, #FF79DA);
+  border: none;
+  padding: 50px 140px;
+  border-radius: 65px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer .footer__logo {
+  color: white;
+  width: 250px;
+  padding-bottom: 10px;
+}
+footer .footer__links {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__links a {
+  color: white;
+  padding-top: 20px;
+  font-size: 35px;
+}
+footer .footer__links i {
+  padding-right: 10px;
+}/*# sourceMappingURL=resto.css.map */
