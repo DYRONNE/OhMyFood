@@ -6,22 +6,25 @@ body{
 a {
     text-decoration: none;
 }
+
 .navbar {
+    background-color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+    
     .navbar__logo {
         padding-top: 50px;
         padding-bottom: 50px;
-        
+        margin: auto;
+       
     }
     .navbar__return i {
         font-size: 60px;
         color: black;
-        position: relative;  
-        right: 220px; 
+        position: relative;
+        left: 40px;
     }
+
 }
 .banner img {
     object-fit: cover;
@@ -41,7 +44,18 @@ a {
         justify-content: space-between;
     }
     &__head i {
-        padding-right: 70px;
+        font-size: 50px;
+        color: black;
+        transition-property: all;
+        transition: 400ms;
+        padding-right: 50px;
+        &:hover {
+            font-weight: 900;
+            color: transparent;
+            background:linear-gradient(50deg, #9356DC, #FF79DA);
+            background-clip: text;
+          
+        }
     }
     &__head--title {
         font-family: "Shrikhand", serif;
@@ -49,8 +63,30 @@ a {
         padding-left: 40px;
     }
 }
+.entree {
+    animation: appear 400ms 400ms ease-in-out;
+    animation-fill-mode: both;
+    
+}
+.plat {
+    animation: appear 400ms 800ms ease-in-out;
+    animation-fill-mode: both;
+}
+.desserts {
+    animation: appear 400ms 1200ms ease-in-out;
+    animation-fill-mode: both;
+}
+@keyframes appear {
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+        }
+    }
+
 .menu__choice {
-    padding: 40px 40px 0px 40px;
+    padding: 0px 50px;
     &--title {
         font-weight: 200;
         font-size: 50px;
@@ -72,31 +108,71 @@ a {
     &--card {
         background-color: #ffffff;
         border-radius: 40px;
-        position: relative;
         box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-        &-title {
-            font-size: 30px;
-            font-weight: 450;
-            padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &-content {
             padding-left: 50px;
-        }
-        &-subtitle {
-            padding-left: 50px;
-            font-size: 16px;
-            font-weight: 300;
-            margin-top: -20px;
-            padding-bottom: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            &-title {
+                font-size: 40px;
+                font-weight: 450;
+                margin-bottom: -20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+            }
+            &-subtitle {
+                font-size: 35px;
+                font-weight: 300;
+                padding-top: -20px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
         }
         &-price {
-            position: absolute;
-            right: 40px;
-            bottom: 5px;
-            font-size: 38px;
+            font-size: 35px;
             font-weight: 450;
+            display: flex;
+            align-self: end;
+            margin-right: -140px;
+            transition: all 400ms;
             
+            
+            }
+        &:hover .menu__choice--card-price {
+            margin-right: 0px;
+        }
+        &-price p {
+            padding-right: 40px;
+            display: flex;
+            align-self: end;
+            margin-left: 50px;
+    
+        }
+        .check {
+            padding-left: 50px;
+            background-color: #8de4db;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            padding-right: 50px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            color: white;
+            }
         }
     }
-}
+
+
 .menu__button {
     display: flex;
     align-items: center;
@@ -113,6 +189,10 @@ a {
    padding: 50px 140px;
    border-radius: 65px;
    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+   &:hover {
+    opacity: 0.8;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+}
 
 }
 
@@ -122,21 +202,75 @@ footer {
     padding-left: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
-    .footer__logo {
+    .footer__content--logo {
         color: white;
-        width: 250px;
-        padding-bottom: 10px;
+        font-family: "Shrikhand", serif;
+        font-size: 40px;
     }
-    .footer__links {
+    .footer__content--links {
         display: flex;
         flex-direction: column;
     }
-    .footer__links a {
+    .footer__content--links a {
         color: white;
         padding-top: 20px;
-        font-size: 35px;
+        font-size: 30px;
     }
-    .footer__links i {
+    .footer__content--links i {
         padding-right: 10px;
     }
+}
+
+@media (min-width: 1440px) {
+    body  {
+        background-color: #ffffff;
+    }
+
+    .menu {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 100px;
+        margin-bottom: -110px;
+        &__head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        &__choice {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
+        
+    }
+    footer {
+        padding-top: 0px;
+    
+    }
+    footer .footer__content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        padding-right: 90px;
+        justify-content: end;
+        padding-top: 40px;
+       
+    }  
+    footer .footer__content--logo{
+        font-size: 20px;
+        padding-left: 80px;
+        
+       
+        
+    }
+    footer .footer__content--links {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    footer .footer__content--links a {
+        font-size: 20px;
+        padding: 0px;
+      }
 }

@@ -11,9 +11,20 @@
 <script src="https://kit.fontawesome.com/7b7941dd93.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="loader">
+            <div class="loader__Wrapper">
+                <div class="loader__Wrapper--Inner">
+                    <div class="loader__Wrapper--Inner-txt">Bon Appétit</div>
+                    <div class="loader__Wrapper--Inner-txt">Enjoy your meal </div>
+                    <div class="loader__Wrapper--Inner-txt">请享用 </div>
+                    <div class="loader__Wrapper--Inner-txt">Guten Appetit</div>
+                    <div class="loader__Wrapper--Inner-txt-OMF">OhMyFooD </div>
+                </div>
+            </div>
+        </div>
         <header>
             <div class="header__logo">
-                <img src="./assets/images/ohmyfood.png" alt="logo ohmyfood">
+                <img class="header__logo--img" src="./assets/images/ohmyfood.png" alt="logo ohmyfood">
             </div>
             <div class="header__localisation">
                 <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>
@@ -33,11 +44,11 @@
                 </div>
                 <div class="filters__contener">
                     <button class="filters__contener--button">1</button>
-                    <a class="filters__contener--link" href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a>
+                    <a class="filters__contener--link-1" href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a>
                     <button class="filters__contener--button">2</button>
-                    <a class="filters__contener--link" href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a>
+                    <a class="filters__contener--link-2" href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a>
                     <button class="filters__contener--button">3</button>
-                    <a class="filters__contener--link" href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a>
+                    <a class="filters__contener--link-3" href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a>
                 </div>
             </section>
             <section class="restaurants">
@@ -45,7 +56,7 @@
                     <h3>Restaurants</h3>
                 </div>
                 <div class="restaurants__cards">
-                    <a href="#">
+                    <a href="reso1.html">
                         <article class="restaurants__cards--card">
                             <img class="restaurants__cards--card-img" src="assets/images/restaurants/resto1.jpg" alt="Image du restaurant La palette du goût">
                             <div class="restaurants__cards--card-content">
@@ -57,9 +68,9 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="resto2.html">
                         <article class="restaurants__cards--card">
-                            <img class="restaurants__cards--card-img" src="assets/images/restaurants/resto1.jpg" alt="Image du restaurant La palette du goût">
+                            <img class="restaurants__cards--card-img" src="assets/images/restaurants/la-note.jpg" alt="Image du restaurant La palette du goût">
                             <div class="restaurants__cards--card-content">
                                 <h4 class="restaurants__cards--card-content-title">La palette du goût</h4>
                                 <p class="restaurants__cards--card-content-subtitle">Ménilmontant</p>
@@ -69,9 +80,9 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="resto3.html">
                         <article class="restaurants__cards--card">
-                            <img class="restaurants__cards--card-img" src="assets/images/restaurants/resto1.jpg" alt="Image du restaurant La palette du goût">
+                            <img class="restaurants__cards--card-img" src="assets/images/restaurants/francaise.jpg" alt="Image du restaurant La palette du goût">
                             <div class="restaurants__cards--card-content">
                                 <h4 class="restaurants__cards--card-content-title">La palette du goût</h4>
                                 <p class="restaurants__cards--card-content-subtitle">Ménilmontant</p>
@@ -81,9 +92,9 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
+                    <a href="resto4.html">
                         <article class="restaurants__cards--card">
-                            <img class="restaurants__cards--card-img" src="assets/images/restaurants/resto1.jpg" alt="Image du restaurant La palette du goût">
+                            <img class="restaurants__cards--card-img" src="assets/images/restaurants/delice.jpg" alt="Image du restaurant La palette du goût">
                             <div class="restaurants__cards--card-content">
                                 <h4 class="restaurants__cards--card-content-title">La palette du goût</h4>
                                 <p class="restaurants__cards--card-content-subtitle">Ménilmontant</p>
@@ -97,14 +108,15 @@
             </section>
         </main>
         <footer>
-            <img class="footer__logo" src="assets/images/ohmyfood3.png" alt="logo OMF footer">
-            <div class="footer__links">
-                <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
+            <div class="footer__content">
+                <p class="footer__content--logo">OhMyFood</p>
+                <div class="footer__content--links">
+                    <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
-
         </footer>
         
     </body>
