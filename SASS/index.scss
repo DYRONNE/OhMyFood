@@ -1,3 +1,4 @@
+// variables et mixin
 @mixin title-text {
     font-size: 18px;
     font-weight: bold;
@@ -7,67 +8,16 @@
     font-weight: 300;
 }
 
-body{
-    margin: 0px;
-    font-family: roboto;
-    background-color: #ffffff;
-}
-a {
-    text-decoration: none;
-}
+$mainbgcolor : #ffffff;
+$bgcolor1 :  #eaeaea; 
+$bgcolor2 : #f6f6f6;
+$color1 :  #8de4db;
+$color2 :  #9356DC;
+$colortxtwhite : white;
 
-// loader
-.loader {
-    background: #8de4db;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 4;
-    animation: desapear;
-    animation-duration: 4800ms;
-    animation-fill-mode: forwards;
-    &__Wrapper {
-        height: 90px;
-        overflow: hidden;
-        &--Inner {
-            position: relative;
-            animation-name: languageSwitch;
-            animation-duration: 4000ms;
-            animation-fill-mode: forwards;
-            animation-delay: 1s;
-            display: flex;
-            align-items:center;
-            flex-direction:column;
-        &-txt {
-            font-family: roboto;
-            font-size: 52px;
-            font-weight: 900;
-            color: white;
-            height: 90px;
-            display: flex;
-            align-items: center;
-     }
-        &-txt-OMF {
-            font-family: "Shrikhand", serif;
-            font-size: 52px;
-            font-weight: 900;
-            color: white;
-            height: 90px;
-            display: flex;
-            align-items: center;
-        }
-    }
-    }
-    
-  }
+  /* animation keyframes */
   
-    /* animation keyframes */
-  
-@keyframes desapear {
+  @keyframes desapear {
     0% {
        visibility: visible;
     }
@@ -113,7 +63,68 @@ a {
   }
   
 
-header{
+
+// main
+body{
+    margin: 0px;
+    font-family: roboto;
+    background-color: $mainbgcolor;
+}
+a {
+    text-decoration: none;
+}
+
+// loader
+.loader {
+    background: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    animation: desapear;
+    animation-duration: 4800ms;
+    animation-fill-mode: forwards;
+    &__Wrapper {
+        height: 90px;
+        overflow: hidden;
+        &--Inner {
+            position: relative;
+            animation-name: languageSwitch;
+            animation-duration: 4000ms;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            display: flex;
+            align-items:center;
+            flex-direction:column;
+        &-txt {
+            font-family: roboto;
+            font-size: 52px;
+            font-weight: 900;
+            color: $colortxtwhite ;
+            height: 90px;
+            display: flex;
+            align-items: center;
+     }
+        &-txt-OMF {
+            font-family: "Shrikhand", serif;
+            font-size: 52px;
+            font-weight: 900;
+            color: $colortxtwhite ;
+            height: 90px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    }
+    
+  }
+  
+//  HEAD 
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +141,7 @@ header{
         }
         
         .header__localisation {
-            background-color: #eaeaea;
+            background-color: $bgcolor1;
             padding: 10px 0px 10px 0px;
             width: 100%;
             text-align: center;
@@ -145,7 +156,7 @@ header{
             padding-right: 40px;
         }
         .header__banner {
-            background-color: #f6f6f6 ;
+            background-color: $bgcolor2  ;
             width: 100%;
             padding-top: 50px;
             padding-bottom: 150px;
@@ -172,7 +183,7 @@ header{
                     opacity: 1;
                     padding: 40px 40px;
                     border-radius: 60px;
-                    color: white;
+                    color: $colortxtwhite ;
                     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
                     &:hover {
                         opacity: 0.8;
@@ -182,26 +193,26 @@ header{
                 }
         }
 }
+// partie filtre
 .filters {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 200px;
-    .filters__title {
+    &__title {
         font-size: 40px;
         display: flex;
         align-self: flex-start;
         padding-left: 5%;
         padding-top: 90px;
     }
-    .filters__contener {
+    &__contener {
         display: flex;
         flex-direction: column;
         &:hover .filters__contener--link i {
-            color: #9356DC;
+            color: $color2;
         }
-    }
-        &__contener--button {
+        &--button {
             display: flex;
             align-self: flex-start;
             position: relative;
@@ -209,14 +220,14 @@ header{
             right: 30px;
             border-radius: 50%;
             padding: 15px 26px;
-            color: white;
-            background-color: #9356DC;
-            border: #9356DC;
+            color: $colortxtwhite ;
+            background-color: $color2;
+            border: $color2;
             font-size: 35px;
             z-index: 1;
             
         }
-        &__contener--link { &-1,&-2,&-3 {
+        &--link { &-1,&-2,&-3 {
 
             display: flex;
             justify-content: center;
@@ -224,7 +235,7 @@ header{
             color: black;
             padding: 60px 40px;
             border-radius: 50px;
-            background-color: #f6f6f6;
+            background-color: $bgcolor2;
             font-size: 36px;
             width: 750px;
             box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
@@ -234,42 +245,43 @@ header{
                 box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
             }
             &:hover i {
-                color: #9356DC;
+                color: $color2;
             }
             }
         }
-        &__contener--link { &-1 i,&-2 i,&-3  i {
+        &--link { &-1 i,&-2 i,&-3 i {
             padding-right: 30px;
             color: #7E7E7E;
         }
     }
 }
+}
 
+// choix des restaurant et cartes restaurant
 .restaurants {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f6f6f6;
-        .restaurants__title {
+    background-color: $bgcolor2 ;
+        &__title {
             display: flex;
             align-self: flex-start;
             padding-left: 8%;
             font-size: 50px;
             margin-top: 50px;
         }
-        .restaurants__cards {
+        &__cards {
             display: flex;
             flex-direction: column;
-        }
-        &__cards--card { 
-            width:900px;
-            background-color: #ffffff;
-            border-radius: 40px;
-            position: relative;
-            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 50px;
+            &--card { 
+                width:900px;
+                background-color: $mainbgcolor;
+                border-radius: 40px;
+                position: relative;
+                filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
                 &-img {
                     width: 100%;
                     height: 450px;
@@ -282,7 +294,7 @@ header{
                     bottom: 500px;
                     left: 700px;
                     padding: 15px 26px;
-                    background-color: #8de4db;
+                    background-color: $color1;
                     font-size: 30px;
                     color: #008766;
                     border-radius: 5px;
@@ -328,29 +340,30 @@ header{
                 }
             }
         }
-        
+    }
 }
-footer {
+// footer
+.footer__content {
     background-color: #353535;
     width: 100%;
     padding-left: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
-    .footer__content--logo {
-        color: white;
+    &--logo {
+        color: $colortxtwhite ;
         font-family: "Shrikhand", serif;
         font-size: 40px;
     }
-    .footer__content--links {
+    &--links {
         display: flex;
         flex-direction: column;
     }
-    .footer__content--links a {
-        color: white;
+    &--links a {
+        color: $colortxtwhite ;
         padding-top: 20px;
         font-size: 30px;
     }
-    .footer__content--links i {
+    &--links i {
         padding-right: 10px;
     }
 }

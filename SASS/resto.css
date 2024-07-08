@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0px;
   font-family: roboto;
@@ -30,6 +29,7 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 600px;
 }
 
 .menu {
@@ -103,11 +103,11 @@ a {
 .menu__choice--title-highlight::after {
   content: "";
   position: absolute;
-  bottom: -12px; /* Ajustez cette valeur pour la position verticale */
+  bottom: -12px;
   left: 0;
   width: 50%;
-  height: 6px; /* Ajustez cette valeur pour l'épaisseur de la ligne */
-  background-color: #8de4db; /* Ajustez cette valeur pour la couleur de la ligne */
+  height: 6px;
+  background-color: #8de4db;
 }
 .menu__choice--card {
   background-color: #ffffff;

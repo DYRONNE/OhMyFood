@@ -1,3 +1,10 @@
+$mainbgcolor : #ffffff;
+$bgcolor1 :  #eaeaea; 
+$bgcolor2 : #f6f6f6;
+$color1 :  #8de4db;
+$color2 :  #9356DC;
+$colortxtwhite : white;
+
 body{
     margin: 0px;
     font-family: roboto;
@@ -8,7 +15,7 @@ a {
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: $mainbgcolor;
     display: flex;
     align-items: center;
     
@@ -29,10 +36,11 @@ a {
 .banner img {
     object-fit: cover;
     width: 100%;
+    height: 600px;
 }
 
 .menu {
-    background-color: #f6f6f6;
+    background-color: $bgcolor2;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     position: relative;
@@ -98,15 +106,15 @@ a {
         &-highlight::after {
             content: '';
             position: absolute;
-            bottom: -12px; /* Ajustez cette valeur pour la position verticale */
+            bottom: -12px;
             left: 0;
             width: 50%;
-            height: 6px; /* Ajustez cette valeur pour l'épaisseur de la ligne */
-            background-color: #8de4db; /* Ajustez cette valeur pour la couleur de la ligne */
+            height: 6px; 
+            background-color: $color1; 
         }
     }
     &--card {
-        background-color: #ffffff;
+        background-color: $mainbgcolor;
         border-radius: 40px;
         box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
         display: flex;
@@ -161,13 +169,13 @@ a {
         }
         .check {
             padding-left: 50px;
-            background-color: #8de4db;
+            background-color:$color1;
             padding-top: 70px;
             padding-bottom: 70px;
             padding-right: 50px;
             border-top-right-radius: 40px;
             border-bottom-right-radius: 40px;
-            color: white;
+            color:$colortxtwhite;
             }
         }
     }
@@ -183,7 +191,7 @@ a {
    font-size: 40px;
    font-weight: 500;
    margin-top: 70px;
-   color: white;
+   color: $colortxtwhite;
    background:linear-gradient(10deg, #9356DC, #FF79DA);
    border: none;
    padding: 50px 140px;
@@ -203,7 +211,7 @@ footer {
     padding-top: 60px;
     padding-bottom: 60px;
     .footer__content--logo {
-        color: white;
+        color: $colortxtwhite;
         font-family: "Shrikhand", serif;
         font-size: 40px;
     }
@@ -212,7 +220,7 @@ footer {
         flex-direction: column;
     }
     .footer__content--links a {
-        color: white;
+        color:$colortxtwhite;
         padding-top: 20px;
         font-size: 30px;
     }
@@ -223,7 +231,7 @@ footer {
 
 @media (min-width: 1440px) {
     body  {
-        background-color: #ffffff;
+        background-color: $mainbgcolor;
     }
 
     .menu {
