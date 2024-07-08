@@ -304,12 +304,14 @@ header .header__banner--button--link:hover {
           background-clip: text;
 }
 
-.footer__content {
+.footer {
   background-color: #353535;
   width: 100%;
-  padding-left: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer__content {
+  padding-left: 40px;
 }
 .footer__content--logo {
   color: white;
@@ -410,27 +412,27 @@ header .header__banner--button--link:hover {
     bottom: 35px;
     right: 40px;
   }
-  footer {
+  .footer {
     padding-top: 0px;
   }
-  footer .footer__content {
+  .footer__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
-    padding-right: 90px;
     justify-content: end;
     padding-top: 40px;
+    padding-right: 60px;
   }
-  footer .footer__content--logo {
+  .footer__content--logo {
     font-size: 20px;
     padding-left: 80px;
   }
-  footer .footer__content--links {
+  .footer__content--links {
     display: flex;
     flex-direction: row;
     gap: 50px;
   }
-  footer .footer__content--links a {
+  .footer__content--links a {
     font-size: 20px;
     padding: 0px;
   }

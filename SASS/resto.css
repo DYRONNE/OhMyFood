@@ -194,28 +194,30 @@ a {
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-footer {
+.footer {
   background-color: #353535;
   width: 100%;
-  padding-left: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-footer .footer__content--logo {
+.footer__content {
+  padding-left: 40px;
+}
+.footer__content--logo {
   color: white;
   font-family: "Shrikhand", serif;
   font-size: 40px;
 }
-footer .footer__content--links {
+.footer__content--links {
   display: flex;
   flex-direction: column;
 }
-footer .footer__content--links a {
+.footer__content--links a {
   color: white;
   padding-top: 20px;
   font-size: 30px;
 }
-footer .footer__content--links i {
+.footer__content--links i {
   padding-right: 10px;
 }
 
@@ -239,27 +241,27 @@ footer .footer__content--links i {
     padding-left: 10%;
     padding-right: 10%;
   }
-  footer {
+  .footer {
     padding-top: 0px;
   }
-  footer .footer__content {
+  .footer__content {
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
-    padding-right: 90px;
     justify-content: end;
     padding-top: 40px;
+    padding-right: 60px;
   }
-  footer .footer__content--logo {
+  .footer__content--logo {
     font-size: 20px;
     padding-left: 80px;
   }
-  footer .footer__content--links {
+  .footer__content--links {
     display: flex;
     flex-direction: row;
     gap: 50px;
   }
-  footer .footer__content--links a {
+  .footer__content--links a {
     font-size: 20px;
     padding: 0px;
   }
