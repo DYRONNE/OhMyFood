@@ -243,6 +243,7 @@ header .header__banner--button--link:hover {
   width: 900px;
   background-color: #ffffff;
   border-radius: 40px;
+  position: relative;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   display: flex;
   flex-direction: column;
@@ -255,6 +256,16 @@ header .header__banner--button--link:hover {
   border-top-right-radius: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.restaurants__cards--card-new {
+  position: absolute;
+  bottom: 500px;
+  left: 700px;
+  padding: 15px 26px;
+  background-color: #8de4db;
+  font-size: 30px;
+  color: #008766;
+  border-radius: 5px;
 }
 .restaurants__cards--card-content {
   width: 100%;
@@ -377,6 +388,12 @@ footer .footer__content--links i {
   }
   .restaurants__cards--card-img {
     height: 210px;
+  }
+  .restaurants__cards--card-new {
+    bottom: 250px;
+    left: 450px;
+    padding: 10px 20px;
+    font-size: 20px;
   }
   .restaurants__cards--card-content {
     padding-left: 30px;

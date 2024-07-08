@@ -265,6 +265,7 @@ header{
             width:900px;
             background-color: #ffffff;
             border-radius: 40px;
+            position: relative;
             filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
             display: flex;
             flex-direction: column;
@@ -275,6 +276,17 @@ header{
                     border-top-left-radius:40px;
                     border-top-right-radius: 40px; 
                     object-fit: cover;   
+                }
+                &-new {
+                    position: absolute;
+                    bottom: 500px;
+                    left: 700px;
+                    padding: 15px 26px;
+                    background-color: #8de4db;
+                    font-size: 30px;
+                    color: #008766;
+                    border-radius: 5px;
+        
                 }
                 &-content {
                     width: 100%;
@@ -404,6 +416,14 @@ footer {
                 width:600px;
                     &-img {
                         height: 210px;
+                    }
+                    &-new {
+                        bottom: 250px;
+                        left: 450px;
+                        padding: 10px 20px;
+                        font-size: 20px;
+                       
+            
                     }
                     &-content {
                         padding-left: 30px;
