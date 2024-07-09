@@ -294,7 +294,7 @@ header .header__banner--button--link:hover {
   font-size: 50px;
   color: black;
   transition-property: all;
-  transition: 1100ms;
+  transition: 500ms;
 }
 .restaurants__cards--card-like i:hover {
   font-weight: 900;

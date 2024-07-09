@@ -138,7 +138,6 @@ a {
 .menu__choice--card-content-subtitle {
   font-size: 35px;
   font-weight: 300;
-  padding-top: -20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
