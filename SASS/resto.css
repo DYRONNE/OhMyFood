@@ -66,17 +66,17 @@ a {
 }
 
 .entree {
-  animation: appear 400ms 400ms ease-in-out;
+  animation: appear 400ms 600ms ease-in-out;
   animation-fill-mode: both;
 }
 
 .plat {
-  animation: appear 400ms 800ms ease-in-out;
+  animation: appear 400ms 1000ms ease-in-out;
   animation-fill-mode: both;
 }
 
 .desserts {
-  animation: appear 400ms 1200ms ease-in-out;
+  animation: appear 400ms 1400ms ease-in-out;
   animation-fill-mode: both;
 }
 

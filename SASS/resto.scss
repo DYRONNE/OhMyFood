@@ -1,3 +1,4 @@
+// variables
 $mainbgcolor : #ffffff;
 $bgcolor1 :  #eaeaea; 
 $bgcolor2 : #f6f6f6;
@@ -5,6 +6,7 @@ $color1 :  #8de4db;
 $color2 :  #9356DC;
 $colortxtwhite : white;
 
+// main
 body{
     margin: 0px;
     font-family: roboto;
@@ -14,6 +16,7 @@ a {
     text-decoration: none;
 }
 
+// .navbar et header
 .navbar {
     background-color: $mainbgcolor;
     display: flex;
@@ -39,6 +42,7 @@ a {
     height: 600px;
 }
 
+// menu
 .menu {
     background-color: $bgcolor2;
     border-top-left-radius: 100px;
@@ -72,16 +76,16 @@ a {
     }
 }
 .entree {
-    animation: appear 400ms 400ms ease-in-out;
+    animation: appear 400ms 600ms ease-in-out;
     animation-fill-mode: both;
     
 }
 .plat {
-    animation: appear 400ms 800ms ease-in-out;
+    animation: appear 400ms 1000ms ease-in-out;
     animation-fill-mode: both;
 }
 .desserts {
-    animation: appear 400ms 1200ms ease-in-out;
+    animation: appear 400ms 1400ms ease-in-out;
     animation-fill-mode: both;
 }
 @keyframes appear {
@@ -202,7 +206,7 @@ a {
 }
 
 }
-
+// footer
 .footer {
     background-color: #353535;
     width: 100%;
@@ -229,6 +233,7 @@ a {
         }
 }
 }
+// media queries
 @media (min-width: 1440px) {
     body  {
         background-color: $mainbgcolor;
