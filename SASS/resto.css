@@ -49,7 +49,8 @@ a {
   font-size: 50px;
   color: black;
   transition-property: all;
-  transition: 400ms;
+  transition: 300ms cubic-bezier(1, 0.05, 0, 1.49);
+  animation-direction: alternate;
   padding-right: 50px;
 }
 .menu__head i:hover {
