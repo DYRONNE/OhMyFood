@@ -421,15 +421,15 @@ header {
         padding-left: 50px;
         padding-right: 50px;
             .restaurants__title {
-                padding-left: 170px;
+                padding-left: 12%;
                 font-size: 30px;
             }
             .restaurants__cards {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items:center ;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 20px 40px;
+               
             }
             &__cards--card { 
                 width:600px;
